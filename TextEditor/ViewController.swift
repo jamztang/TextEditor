@@ -32,7 +32,7 @@ struct Issue {
         """)
     )
     static let typex1698: Issue = .init(
-        title: "TYPEX-1501",
+        title: "TYPEX-1698",
         content: .html("""
         <ol style="color: green">
             <li>one</li>
