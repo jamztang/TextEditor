@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="UIMenu" message="Requires Xcode 11 or later." minToolsVersion="11.0" requiredIntegratedClassName="UICommandDiff"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -24,10 +25,22 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tyQ-Lv-QEZ">
+                                <rect key="frame" x="50" y="59" width="39" height="30"/>
+                                <menu key="menu" id="T9K-Gy-MzM">
+                                    <children>
+                                        <command title="TYPEX-1" id="tll-Se-Yb8"/>
+                                        <command title="Item 2" id="yYP-vx-uWU"/>
+                                    </children>
+                                </menu>
+                                <state key="normal" title="Reset"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="tyQ-Lv-QEZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="4fY-vF-9rB"/>
+                            <constraint firstItem="tyQ-Lv-QEZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5LS-hQ-x57"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="F74-72-KAi" secondAttribute="bottom" constant="50" id="9Pf-De-xfz"/>
                             <constraint firstItem="F74-72-KAi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Iom-ND-GBl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="F74-72-KAi" secondAttribute="trailing" constant="50" id="kxe-va-dtO"/>
@@ -35,6 +48,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="resetButton" destination="tyQ-Lv-QEZ" id="f0J-7I-1GU"/>
+                        <outlet property="resetMenu" destination="T9K-Gy-MzM" id="tcn-Td-8P9"/>
                         <outlet property="textView" destination="F74-72-KAi" id="Qm3-vI-VQ7"/>
                     </connections>
                 </viewController>
