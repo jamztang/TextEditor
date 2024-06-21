@@ -18,13 +18,13 @@ struct Issue {
     // Mock Data
     static let typex1501: Issue = .init(
         title: "TYPEX-1501",
-        content: .html("<span style='color: green'><b>Ipsum</b> world Ipsum world</span>")
+        content: .html("<span style='color: green; font-size: 24pt'><b style='color: red'>Ipsum</b> world Ipsum world</span>")
     )
     static let typex1493: Issue = .init(
         title: "TYPEX-1493",
         content: .html("""
-        <span style="color: green">
-        <p style="text-indent: 0px;">ipsum world</p>
+        <span style="color: green; font-size: 24pt">
+        <p style="text-indent: 0px; color: red">ipsum world</p>
         <p style="text-indent: 15px;">world</p>
         <p style="text-indent: 30px;">world ipsum</p>
         <p style="text-indent: 45px;">world</p>
@@ -34,7 +34,7 @@ struct Issue {
     static let typex1698: Issue = .init(
         title: "TYPEX-1698",
         content: .html("""
-        <ol style="color: green">
+        <ol style="color: green; font-size: 24pt">
             <li>one</li>
                 <ol>
                     <li>two</li>
