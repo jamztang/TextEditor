@@ -1,4 +1,4 @@
 
 
-https://github.com/jamztang/TextEditor/assets/852375/99e09f2a-3d1a-4d5b-90e0-f95455a9589c
+https://github.com/jamztang/TextEditor/assets/852375/ed1a7c5f-8547-4f58-ac42-117f812195b6
 
